@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <!-- Author Name -->
+    <meta name="author" content="Rizwan Ahmed" />
+    <!-- Keywords of Webpage -->
+    <meta name="keywords" content="Student Registration Form, Student Registration Records" />
+    <!-- Description of Webpage -->
+    <meta name="description"
+        content="Student registration system to register student details such as name, class, address and contact info." />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Fav Icon -->
+    <link rel="icon" href="/Images/register icon.png" type="image" />
+    <!-- CDN link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+
+        <!-- Main Heading -->
+        <h1 class="main-heading">Student Registration System</h1>
+
+        <!-- Description -->
+        <p class="description">Student Registration System is a web application allow students to submit necessary
+            infomation such as student name, student Id, email and contact. This system also allow student to delete or
+            edit their
+            details.</p>
+
+    </header>
+
+    <!-- Main Section -->
+    <main class="main">
+
+        <!-- Form and Record Container -->
+        <div class="container">
+
+            <!-- Form to take user Inputs -->
+            <form onsubmit="addTask()" class="forms">
+
+                <!-- First Name Div -->
+                <div class="box box1">
+
+                    <!-- First Name Input -->
+                    <input class="fName" id="fName" name="FirstName" placeholder="First Name..." type="text"
+                        pattern="[A-Za-z]*" title="Letters only" required />
+                </div>
+
+                <!-- Last Name Div -->
+                <div class="box box1">
+
+                    <!-- Last Name Input -->
+                    <input class="lName" id="lName" name="LastName" placeholder="Last Name..." type="text"
+                        pattern="[A-Za-z]*" title="Letters only" required />
+                </div>
+
+                <!-- Student Id Div -->
+                <div class="box box2">
+
+                    <!-- Student Id Input -->
+                    <input class="studentId" id="studentId" name="StudentID" placeholder="Student ID..." type="number"
+                        required>
+                </div>
+
+                <!-- Email Id Div -->
+                <div class="box box3">
+
+                    <!-- Email Id Input -->
+                    <input class="emailId" id="emailId" name="EmailId" placeholder="Email..." type="email" required>
+                </div>
+
+                <!-- Contact Div -->
+                <div class="box box4">
+
+                    <!-- Contact Input -->
+                    <input class="contact" id="contact" name="Contact" placeholder="Contact Info." type="number"
+                        required>
+                </div>
+
+                <!-- Add Button -->
+                <button class="add" type="submit">Add</button>
+
+            </form>
+
+            <!-- List Div For Records -->
+            <div class="list">
+
+                <!-- Lists -->
+                <div class="listHeader">
+
+                    <!-- First Name Record Span -->
+                    <span class="listfName listItem">First Name</span>
+
+                    <!-- Last Name Record Span -->
+                    <span class="listlName listItem">Last Name</span>
+
+                    <!-- Student Id Record Span -->
+                    <span class="listid listItem">Id</span>
+
+                    <!-- Email Id Record Span -->
+                    <span class="listemail listItem">Email</span>
+
+                    <!-- Contact Record Span -->
+                    <span class="listcontact listItem">Contact</span>
+
+                    <!-- Edit Button Record Span -->
+                    <span class="listedit listItem">Edit</span>
+
+                    <!-- Delete Button record Span -->
+                    <span class="listdelete listItem">Delete</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Javascript File Linked -->
+    <script src="index.js"></script>
+    
+</body>
+
+</html>

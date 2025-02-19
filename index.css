@@ -1,0 +1,267 @@
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(#ffd55c 50%, #5a95ff 50%);
+  padding: 20px 0;
+  overflow-x: hidden;
+}
+
+/* Header Styling */
+.header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Main Heading Styling */
+.main-heading {
+  font-size: 2.5rem;
+  color: #b771e5;
+  padding: 10px 0;
+}
+
+/* Description Styling */
+.description {
+  width: 60vw;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+/* Main Body Styling */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form And Record List Styling */
+.container {
+  width: 90vw;
+  display: flex;
+  gap: 20px;
+}
+
+/* Form Styling */
+.forms {
+  padding: 10px;
+  width: 35vw;
+  background-color: #f1f8fb;
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* Input Divs Styling */
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+/* Input Styling */
+.box input {
+  background-color: transparent;
+  color: #111111;
+  font-size: 0.9em;
+  border: none;
+  outline: none;
+  padding: 1em 0.5em;
+  border-bottom: 2px solid #d1d3d4;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+/* Input Focus Styling */
+.box input:focus {
+  border: none;
+  border-bottom: 2px solid #5a95ff;
+}
+
+/* Add Button Styling */
+.add {
+  padding: 5px 30px;
+  margin: 15px 0 10px 0;
+  border-radius: 0.5em;
+  font-weight: 500;
+  font-size: 1em;
+  background-color: #5a95ff;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  outline: none;
+}
+
+/* Add Button Hover Styling */
+.add:hover {
+  background-image: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+/* List Record Styling */
+.list {
+  width: 60vw;
+  background-color: transparent;
+  max-height: 360px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* List Scroll bar Styling */
+.list::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+/* List Scroll bar thumb Styling */
+.list::-webkit-scrollbar-thumb {
+  width: 10px;
+  height: 10px;
+  background-image: linear-gradient(red, blue);
+  border-radius: 10px;
+}
+
+/* Student List Records Styling */
+.listHeader {
+  padding: 8px 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+  background-color: white;
+  border-radius: 10px;
+  margin: 8px 0px;
+}
+
+/* All List Items Styling */
+.listItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Edit Button Styling */
+.edit {
+  color: blue;
+  cursor: pointer;
+  outline: none;
+  margin: 0 4px;
+  border-radius: 10px;
+  padding: 8px 0;
+  border: none;
+  transition: all 0.5s;
+}
+/* Edit Button Hover Styling */
+.edit:hover {
+  background-color: blue;
+  color: white;
+}
+/* Delete Button Styling */
+.delete {
+  color: red;
+  cursor: pointer;
+  outline: none;
+  margin: 0 4px;
+  padding: 8px 0;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.5s;
+}
+/* Delete Button Hover Styling */
+.delete:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Responsive for devices with a screen size below 767px */
+@media screen and (max-width: 767px) {
+  .body {
+    margin-bottom: 20px;
+  }
+  .header {
+    width: 100%;
+    padding: 5%;
+  }
+  .main-heading {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .forms {
+    width: 95%;
+  }
+  .list {
+    width: 95%;
+  }
+  .listHeader {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+  }
+  .listItem {
+    padding: 5px 5px;
+  }
+}
+
+/* Responsive for devices with a screen size between 768 to 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .body {
+    margin-bottom: 20px;
+    min-height: 100vh;
+    max-height: 200vh;
+  }
+  .header {
+    width: 100%;
+    padding: 5%;
+  }
+  .main-heading {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .forms {
+    width: 95%;
+  }
+  .list {
+    width: 95%;
+  }
+  .listHeader {
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+  }
+  .listItem {
+    padding: 5px 5px;
+  }
+}
